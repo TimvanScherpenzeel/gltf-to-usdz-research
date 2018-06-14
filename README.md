@@ -1,5 +1,7 @@
 # glTF to USDZ
 
+Proof of concept of converting glTF to USDZ for AR Quick Look Gallery.
+
 ## Reasoning
 
 Even though I think the intensions of Apple / Pixar are great with the open source [USD pipeline](https://github.com/PixarAnimationStudios/USD) I think we as an industry should be relying more on truly open formats that are not controlled by a single entity. Installing `USD` is cumbersoms, requires a lot of disk space and completely overkill in most situations (if your goal is to convert some 3D models to USDZ and show them using `AR Quick Look Gallery`).
