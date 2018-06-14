@@ -55,8 +55,7 @@ Which should result into the following output
 Converting asset file 'apple.usda' ...
 ```
 
-In order to see the contents of the outputted `USDZ` change the extension to `.zip`.
-If everything went correctly you will now see `apple.usdc`, `appleD.jpg` and `appleN.jpg`.
+In order to see the contents of the outputted `USDZ` change the extension to `.zip` and unzip it, preferably in a seperate folder. If everything went correctly you will now see `apple.usdc`, `appleD.jpg` and `appleN.jpg`.
 
 ## Resources
 
