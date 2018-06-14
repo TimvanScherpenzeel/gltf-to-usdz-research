@@ -38,7 +38,7 @@ Link to the beta version instead of the normal version
 sudo xcode-select --switch /Applications/Xcode-beta.app
 ```
 
-Construct a new `USDA` using `gltf-to-usdz` and run it through the `usdz-converter`.
+Construct a new `USDA` using `gltf-to-usdz` and run it through the `usdz_converter`.
 
 ```
 node gltf-to-usdz.js > apple.usda && xcrun usdz_converter apple.usda apple.usdz
