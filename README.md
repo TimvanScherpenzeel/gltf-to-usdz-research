@@ -12,6 +12,8 @@ My idea is to dynamically generate / manipulate the intermediary a general USDA 
 
 Please note that this is just an experimental setup and should be seen as an attempt to create a simple pipeline from glTF to USDZ. I have not yet tested the outputted USDZ file as I don't have access to a device with the iOS 12. Currently everything is hardcoded and this is just a proof of concept. The tool does not accept any glTF files yet.
 
+Most of the findings come from `trayser` who posted details regarding OBJ to `USDZ` conversion on [developers.apple.com](https://forums.developer.apple.com/thread/104042).
+
 ## To do
 
 - Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery.
