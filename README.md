@@ -55,6 +55,9 @@ Which should result into the following output
 Converting asset file 'apple.usda' ...
 ```
 
+In order to see the contents of the outputted `USDZ` change the extension to `.zip`.
+If everything went correctly you will now see `apple.usdc`, `appleD.jpg` and `appleN.jpg`.
+
 ## Resources
 
 - https://graphics.pixar.com/usd/docs/Converting-Between-Layer-Formats.html
