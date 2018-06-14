@@ -8,18 +8,17 @@ Even though I think the intensions of Apple / Pixar are great with the open sour
 
 In order to move away from using the [USD pipeline](https://github.com/PixarAnimationStudios/USD) solution offered by Pixar I think it would be wise to try and manipulate the intermediary readeable `USDA` format. Unfortunately there are very little examples available of the `USDA`. If we would be able to construct this intermediary format reliably we could focus on creating a tool that takes a `glTF` file and constructs the necessary file structure.
 
-My idea is to dynamically generate / manipulate the intermediary a general USDA file structure and pass that to the `usdz-converter` to handle the further conversion. The idea comes from [walt](https://github.com/ballercat/walt) and manually manipulating [.wat (WebAssembly text format)](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format).
+My idea is to dynamically generate / manipulate the intermediary a general `USDA` file-structure and pass that to the `usdz-converter` to handle the further conversion to `USDZ`. The idea comes from [walt](https://github.com/ballercat/walt) and manually manipulating [.wat (WebAssembly text format)](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format).
 
 Please note that this is just an experimental setup and should be seen as an attempt to create a simple pipeline from glTF to USDZ. I have not yet tested the outputted USDZ file as I don't have access to a device with the iOS 12. Currently everything is hardcoded and this is just a proof of concept. The tool does not accept any glTF files yet.
 
-Most of the findings come from `trayser` who posted details regarding OBJ to `USDZ` conversion on [developers.apple.com](https://forums.developer.apple.com/thread/104042). `trayser` also noticed that many OBJ files failed to in conversion if they include complex tags.
-He recommends commenting out any line that starts with anything other than `#`, `v`, `vn`, `vt`, `vp`, `f`, `g` etc.
+Most of the findings come from `trayser` who posted details regarding OBJ to `USDZ` conversion on [developers.apple.com](https://forums.developer.apple.com/thread/104042). `trayser` also noticed that many OBJ files failed to in conversion if they include complex tags. He recommends commenting out any line that starts with anything other than `#`, `v`, `vn`, `vt`, `vp`, `f`, `g` etc.
 
 ## To do
 
-- Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery.
+- Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery (requires iOS 12 and a recent iOS device)
 
-- Test with various OBJ files (find out what is possible and what is not).
+- Test with various the processing of various OBJ files (find out what is possible and what is not).
 
 - Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py). If we could work around that issue perhaps by looking into how `USDC` gets converted we should be able to use this process outside of the toolchain.
 
