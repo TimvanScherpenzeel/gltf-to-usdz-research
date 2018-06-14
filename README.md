@@ -2,7 +2,7 @@
 
 ## Reasoning
 
-In order to shift the problem away from using the [USD pipeline](https://github.com/PixarAnimationStudios/USD) solution offered by Pixar I think it would be wise to try and manipulate the readeable intermediary readeable `USDA` format.
+In order to shift the problem away from using the [USD pipeline](https://github.com/PixarAnimationStudios/USD) solution offered by Pixar I think it would be wise to try and manipulate the intermediary readeable `USDA` format. Unfortunately there are very little examples available of the `USDA`.
 
 My idea is to dynamically generate / manipulate the intermediary a general USDA file structure and pass that to the `usdz-converter` to handle the further conversion. The idea comes from [walt](https://github.com/ballercat/walt) and manually manipulating [.wat (WebAssembly text format)](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format).
 
@@ -18,7 +18,8 @@ The tool does not accept any glTF files yet.
 
 - Test with various OBJ files (find out what is possible and what is not)
 - Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery
-- Find a way to convert glTF to OBJ
+
+- Find a way to convert glTF geometry to OBJ geometry and extract the used textures
 - Dynamically construct the USDA file based on passed in textures from the glTF file
 
 ## Installation
