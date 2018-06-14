@@ -1,12 +1,18 @@
 # glTF to USDZ
 
-Dynamically generate / manipulate the intermediary a general USDA file structure, pass that to the `usdz-converter`.
+## Reasoning
+
+In order to shift the problem away from using the [USD pipeline](https://github.com/PixarAnimationStudios/USD) solution offered by Pixar I think it would be wise to try and manipulate the readeable intermediary readeable `USDA` format.
+
+My idea is to dynamically generate / manipulate the intermediary a general USDA file structure and pass that to the `usdz-converter` to handle the further conversion. The idea comes from [walt](https://github.com/ballercat/walt) and manually manipulating [.wat (WebAssembly text format)](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format).
 
 Please note that this is just an experimental setup and should be seen as an attempt to create a simple pipeline from glTF to USDZ.
 
 I have not yet tested the outputted USDZ file as I don't have access to a device with the iOS 12.
 
 Currently everything is hardcoded and this is just a proof of concept.
+
+The tool does not accept any glTF files yet.
 
 ## To do
 
