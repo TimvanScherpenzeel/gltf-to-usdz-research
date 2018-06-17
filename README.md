@@ -45,7 +45,7 @@ sudo xcode-select --switch /Applications/Xcode-beta.app
 Construct a new `USDA` using `gltf-to-usdz` and run it through the `usdz_converter`.
 
 ```
-node ./bin/gltf-to-usdz.js > ./assets/apple.usda && xcrun usdz_converter ./assets/apple.usda ./assets/apple.usdz
+node ./bin/gltf-to-usdz.js -i ./assets/apple.gltf -o ./assets/apple.usda && xcrun usdz_converter ./assets/apple.usda ./assets/apple.usdz
 ```
 
 Which should result into the following output
