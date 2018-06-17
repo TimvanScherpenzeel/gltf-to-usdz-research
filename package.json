@@ -1,0 +1,31 @@
+{
+  "name": "gltf-to-usdz",
+  "version": "0.0.1",
+  "description": "Proof of concept of converting glTF to USDZ for AR Quick Look Gallery.",
+  "main": "index.js",
+  "bin": {
+    "gltf-to-usdz": "gltf-to-usdz.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimvanScherpenzeel/gltf-to-usdz.git"
+  },
+  "author": "Tim van Scherpenzeel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimvanScherpenzeel/gltf-to-usdz/issues"
+  },
+  "homepage": "https://github.com/TimvanScherpenzeel/gltf-to-usdz#readme",
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "gltf-validator": "^2.0.0-dev.2.3"
+  }
+}
