@@ -16,7 +16,9 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 ## To do
 
-- Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery (requires iOS 12 and a recent iOS device)
+- ~~Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery (requires iOS 12 and a recent iOS device)~~
+
+  [Confirmed by @domenicopanacea](https://twitter.com/domenicopanacea/status/1008266095386644480)
 
 - Test with the processing of various OBJ files (find out what is possible and what is not).
 
