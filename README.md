@@ -96,7 +96,7 @@ pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.9/latest/ py
 
 - Update OpenImageIO release version from `Release-1.7.14.zip` to `Release-1.8.12.zip` in `build_scripts/build_usd.py`.
 
-- Run `python USD/build_scripts/build_usd.py BUILD` resulting in the following output if succesfully installed:
+- Run `python USD/build_scripts/build_usd.py BUILD`, it will take roughly 1 hour, resulting in the following output if succesfully installed:
 
 ```
 ➜  pixar python USD/build_scripts/build_usd.py BUILD
