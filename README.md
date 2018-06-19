@@ -146,6 +146,23 @@ Success! To use USD, please ensure that you have:
     /Users/timvanscherpenzeel/Projects/pixar/BUILD/bin
 ```
 
+Unfortunately I have the following error when running `usdcat`:
+
+```
+➜  cupandsaucer usdcat CupAndSaucer.usdc -o CupAndSaucer.usda
+
+------------------------ 'Python' is dying ------------------------
+Python crashed. FATAL ERROR: Failed axiom: ' Py_IsInitialized() '
+in operator() at line 148 of /Users/timvanscherpenzeel/Projects/pixar/USD/pxr/base/lib/tf/pyTracing.cpp
+
+The stack can be found in Tims-MacBook-Pro.local:/var/folders/s9/rnmbn61120s2hwww26_gk3k40000gn/T//st_Python.53393
+done.
+------------------------------------------------------------------
+[1]    53393 abort      usdcat CupAndSaucer.usdc -o CupAndSaucer.usda
+```
+
+I've reported the issue here [#19](https://github.com/PixarAnimationStudios/USD/issues/19).
+
 ## Resources
 
 - https://graphics.pixar.com/usd/docs/Converting-Between-Layer-Formats.html
