@@ -73,7 +73,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @example@
+			  asset inputs:file = @./assets/DamagedHelmet//DamagedHelmet_metallicTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
@@ -109,7 +109,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @example@
+			  asset inputs:file = @./assets/DamagedHelmet//DamagedHelmet_roughnessTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
