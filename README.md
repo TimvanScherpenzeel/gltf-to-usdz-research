@@ -4,9 +4,9 @@ Proof of concept of converting glTF to USDZ for AR Quick Look Gallery.
 
 ## Reasoning
 
-Even though I think the intensions of Apple / Pixar are great with the open source [USD pipeline](https://github.com/PixarAnimationStudios/USD) I think we as an industry should be relying more on truly open formats that are not controlled by a single entity. Installing `USD` is cumbersome, requires a lot of disk space and is completely overkill for most situations (if your goal is to convert some 3D models to USDZ and show them using `AR Quick Look Gallery`).
+Even though I think the intensions of Apple / Pixar are great with the open source [USD](https://github.com/PixarAnimationStudios/USD) pipeline I think we as an industry should be relying more on truly open formats that are not controlled by a single entity. Installing `USD` is cumbersome, requires a lot of disk space and is completely overkill for most situations (if your goal is to convert some 3D models to USDZ and show them using `AR Quick Look Gallery`).
 
-In order to move away from using the [USD pipeline](https://github.com/PixarAnimationStudios/USD) solution offered by Pixar I think it would be wise to try and manipulate the intermediary readeable `USDA` format. Unfortunately there are very little examples available of `USDA` files. If we would be able to construct this intermediary format reliably we could focus on creating a tool that takes a `glTF` file and constructs the necessary file structure.
+In order to move away from using the [USD](https://github.com/PixarAnimationStudios/USD) pipeline solution offered by Pixar I think it would be wise to try and manipulate the intermediary readeable `USDA` format. Unfortunately there are very little examples available of `USDA` files. If we would be able to construct this intermediary format reliably we could focus on creating a tool that takes a `glTF` file and constructs the necessary file structure.
 
 My idea is to dynamically generate / manipulate the intermediary a general `USDA` file-structure and pass that to the `usdz-converter` to handle the further conversion to `USDZ`.
 
@@ -23,6 +23,8 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 - Test with the processing of various OBJ files (find out what is possible and what is not).
 
 - Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py). If we could work around that issue perhaps by looking into how `USDC` gets converted we should be able to use this process outside of the toolchain.
+
+  I have not yet been able to install [USD](https://github.com/PixarAnimationStudios/USD) correctly, please see the development section below.
 
 - Find a way to convert glTF geometry to OBJ geometry and extract the used textures.
 
