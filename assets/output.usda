@@ -69,6 +69,16 @@
 		  }
 
 			
+		  def Shader "metallic_map"
+		  {
+			  uniform token info:id = "UsdUVTexture"
+			  float4 inputs:default = (0, 0, 0, 1)
+			  asset inputs:file = @example@
+			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
+			  token inputs:wrapS = "repeat"
+			  token inputs:wrapT = "repeat"
+			  float3 outputs:rgb
+		  }
 
 			
 		  def Shader "normal_map"
@@ -95,6 +105,16 @@
 		  }
 
 			
+		  def Shader "roughness_map"
+		  {
+			  uniform token info:id = "UsdUVTexture"
+			  float4 inputs:default = (0, 0, 0, 1)
+			  asset inputs:file = @example@
+			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
+			  token inputs:wrapS = "repeat"
+			  token inputs:wrapT = "repeat"
+			  float3 outputs:rgb
+		  }
 		}
 
 	}
