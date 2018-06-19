@@ -61,6 +61,91 @@ Converting asset file 'example.usda' ...
 
 In order to see the contents of the outputted `USDZ` change the extension to `.zip` and unzip it, preferably in a seperate folder.
 
+## Development
+
+In order to install [USD](https://github.com/PixarAnimationStudios/USD) on MacOS please follow the following instructions:
+
+- Make sure to to upgrade your operating system to macOS High Sierra 10.13.4.
+
+- Make sure to install XCode 10 Beta and select it as target
+
+```
+https://developer.apple.com/download/
+
+sudo xcode-select --switch /Applications/Xcode-beta.app
+```
+
+- Install Cmake and QT
+
+```
+brew install cmake
+brew install cartr/qt4/qt
+```
+
+- Install PyOpenGL
+
+```
+pip install PyOpenGL
+```
+
+- Install PySide2
+
+```
+pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.9/latest/ pyside2 --trusted-host download.qt.io
+```
+
+- Update OpenImageIO release version from `Release-1.7.14.zip` to `Release-1.8.12.zip` in `build_scripts/build_usd.py`.
+
+- Run `python USD/build_scripts/build_usd.py BUILD` resulting in the following output if succesfully installed:
+
+```
+➜  pixar python USD/build_scripts/build_usd.py BUILD
+
+Building with settings:
+  USD source directory          /Users/timvanscherpenzeel/Projects/pixar/USD
+  USD install directory         /Users/timvanscherpenzeel/Projects/pixar/BUILD
+  3rd-party source directory    /Users/timvanscherpenzeel/Projects/pixar/BUILD/src
+  3rd-party install directory   /Users/timvanscherpenzeel/Projects/pixar/BUILD
+  Build directory               /Users/timvanscherpenzeel/Projects/pixar/BUILD/build
+  CMake generator               Default
+  Downloader                    curl
+
+  Building                      Shared libraries
+    Imaging                     On
+      Ptex support:             Off
+    UsdImaging                  On
+    Python support              On
+    Documentation               Off
+    Tests                       Off
+    Alembic Plugin              Off
+      HDF5 support:             Off
+    Maya Plugin                 Off
+    Katana Plugin               Off
+    Houdini Plugin              Off
+
+    Dependencies                zlib, boost, TBB, JPEG, TIFF, PNG, OpenEXR, GLEW, OpenImageIO, OpenSubdiv
+
+STATUS: Installing zlib...
+STATUS: Installing boost...
+STATUS: Installing TBB...
+STATUS: Installing JPEG...
+STATUS: Installing TIFF...
+STATUS: Installing PNG...
+STATUS: Installing OpenEXR...
+STATUS: Installing GLEW...
+STATUS: Installing OpenImageIO...
+STATUS: Installing OpenSubdiv...
+STATUS: Installing USD...
+
+Success! To use USD, please ensure that you have:
+
+    The following in your PYTHONPATH environment variable:
+    /Users/timvanscherpenzeel/Projects/pixar/BUILD/lib/python
+
+    The following in your PATH environment variable:
+    /Users/timvanscherpenzeel/Projects/pixar/BUILD/bin
+```
+
 ## Resources
 
 - https://graphics.pixar.com/usd/docs/Converting-Between-Layer-Formats.html
