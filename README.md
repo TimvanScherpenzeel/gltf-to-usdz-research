@@ -20,7 +20,7 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
   [Confirmed by @domenicopanacea](https://twitter.com/domenicopanacea/status/1008266095386644480)
 
-- Test with the processing of various OBJ files (find out what is possible and what is not).
+- ~~Test with the processing of various OBJ files (find out what is possible and what is not).~~
 
   OBJ file exported from https://threejs.org/editor/ with glTF as source generated working OBJ's.
 
