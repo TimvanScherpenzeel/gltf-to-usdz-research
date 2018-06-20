@@ -61,10 +61,10 @@ node ./bin/gltf-to-usdz.js -i ./assets/DamagedHelmet/DamagedHelmet.gltf -o ./ass
 Which should result into the following output
 
 ```
-2018-06-14 15:14:05.317 usdz_converter[16014:11619430]
+2018-06-20 17:21:23.364 usdz_converter[82749:13335731]
 
 
-Converting asset file 'example.usda' ...
+Converting asset file 'DamagedHelmet.usda' ...
 ```
 
 In order to see the contents of the outputted `USDZ` change the extension to `.zip` and unzip it, preferably in a seperate folder.
