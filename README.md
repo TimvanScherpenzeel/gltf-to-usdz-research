@@ -28,9 +28,9 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
   I have not yet been able to install [USD](https://github.com/PixarAnimationStudios/USD) correctly, please see the development section below.
 
-- Find a way to convert glTF geometry to OBJ geometry and extract the used textures.
+- ~~Find a way to convert glTF geometry to OBJ geometry and extract the used textures.~~
 
-  Partially done (textures are extracted correctly, OBJ is still in the making)
+  Basics are done! Vertices and normals unfortunately somehow have some values inverted.
 
 - ~~Dynamically construct the USDA file based on passed in textures from the glTF file.~~
 
