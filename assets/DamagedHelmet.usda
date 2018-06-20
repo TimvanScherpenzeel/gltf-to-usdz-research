@@ -48,7 +48,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @Default_albedo.jpg@
+			  asset inputs:file = @DamagedHelmet_baseColorTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
@@ -60,7 +60,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @Default_emissive.jpg@
+			  asset inputs:file = @DamagedHelmet_emissiveTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
@@ -84,7 +84,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @Default_normal.jpg@
+			  asset inputs:file = @DamagedHelmet_normalTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
@@ -96,7 +96,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @Default_AO.jpg@
+			  asset inputs:file = @DamagedHelmet_occlusionTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
