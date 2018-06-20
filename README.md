@@ -22,13 +22,19 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 - Test with the processing of various OBJ files (find out what is possible and what is not).
 
+  OBJ file exported from https://threejs.org/editor/ with glTF as source generated working OBJ's.
+
 - Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py). If we could work around that issue perhaps by looking into how `USDC` gets converted we should be able to use this process outside of the toolchain.
 
   I have not yet been able to install [USD](https://github.com/PixarAnimationStudios/USD) correctly, please see the development section below.
 
 - Find a way to convert glTF geometry to OBJ geometry and extract the used textures.
 
-- Dynamically construct the USDA file based on passed in textures from the glTF file.
+  Partially done (textures are extracted correctly, OBJ is still in the making)
+
+- ~~Dynamically construct the USDA file based on passed in textures from the glTF file.~~
+
+  Done
 
 ## Installation
 
