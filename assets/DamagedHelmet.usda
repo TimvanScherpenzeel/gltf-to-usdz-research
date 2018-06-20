@@ -1,5 +1,4 @@
-
-	#usda 1.0
+#usda 1.0
 	(
 		endTimeCode = 200
 		startTimeCode = 1
@@ -73,7 +72,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @./assets//DamagedHelmet_metallicTexture.jpg@
+			  asset inputs:file = @DamagedHelmet_metallicTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
@@ -109,7 +108,7 @@
 		  {
 			  uniform token info:id = "UsdUVTexture"
 			  float4 inputs:default = (0, 0, 0, 1)
-			  asset inputs:file = @./assets//DamagedHelmet_roughnessTexture.jpg@
+			  asset inputs:file = @DamagedHelmet_roughnessTexture.jpg@
 			  float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
 			  token inputs:wrapS = "repeat"
 			  token inputs:wrapT = "repeat"
@@ -119,7 +118,7 @@
 
 	}
 	def "Mesh_0" (
-		add references = @apple.obj@</objapple>
+		add references = @DamagedHelmet.obj@</objapple>
 	)
 	{
 		rel material:binding = </Materials/StingrayPBS_0>
