@@ -118,7 +118,7 @@
 
 	}
 	def "Mesh_0" (
-		add references = @DamagedHelmet.obj@</objapple>
+		add references = @DamagedHelmet.obj@</model>
 	)
 	{
 		rel material:binding = </Materials/StingrayPBS_0>
