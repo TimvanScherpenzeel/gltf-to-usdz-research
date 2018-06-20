@@ -40,6 +40,10 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
   Done
 
+## Limitations
+
+- Only the first mesh in the `glTF` file will be parsed and exported. Make sure you merge all meshes.
+
 ## Installation
 
 Make sure you have [Node.js](http://nodejs.org/) installed.
