@@ -40,6 +40,8 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
   Done
 
+- Test if `assets/DamagedHelmet.usdz` works correctly in the AR Quick Look application
+
 ## Limitations
 
 - Only the first mesh in the `glTF` file will be parsed and exported. Make sure you merge all meshes.
