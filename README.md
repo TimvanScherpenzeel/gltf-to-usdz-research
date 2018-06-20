@@ -14,6 +14,10 @@ Please note that this is just an experimental setup and should be seen as an att
 
 Most of the findings come from `trayser` who posted details regarding OBJ to `USDZ` conversion on [developers.apple.com](https://forums.developer.apple.com/thread/104042). `trayser` also noticed that many OBJ files failed to in conversion if they include complex tags. He recommends commenting out any line that starts with anything other than `#`, `v`, `vn`, `vt`, `vp`, `f`, `g` etc.
 
+## Live demo
+
+[Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz/)
+
 ## To do
 
 - ~~Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery (requires iOS 12 and a recent iOS device)~~
