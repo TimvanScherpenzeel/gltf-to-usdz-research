@@ -34,7 +34,7 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 - ~~Find a way to convert glTF geometry to OBJ geometry and extract the used textures.~~
 
-  Basics are done! Vertices and normals unfortunately somehow have some values inverted.
+  Basics are done! Vertices and normals unfortunately somehow have some values inverted by default.
 
 - ~~Dynamically construct the USDA file based on passed in textures from the glTF file.~~
 
