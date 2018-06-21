@@ -28,7 +28,7 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
   OBJ file exported from https://threejs.org/editor/ with glTF as source generated working OBJ's.
 
-- Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py). If we could work around that issue perhaps by looking into how `USDC` gets converted we should be able to use this process outside of the toolchain.
+- Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py).
 
   I have not yet been able to install [USD](https://github.com/PixarAnimationStudios/USD) correctly, please see the development section below.
 
