@@ -4,13 +4,13 @@ Proof of concept of converting glTF to USDZ for AR Quick Look Gallery.
 
 ## Reasoning
 
-Even though I think the intensions of Apple / Pixar are great with the open source [USD](https://github.com/PixarAnimationStudios/USD) pipeline I think we as an industry should be relying more on truly open formats that are not controlled by a single entity. Installing `USD` is cumbersome, requires a lot of disk space and is completely overkill for most situations (if your goal is to convert some 3D models to USDZ and show them using `AR Quick Look Gallery`).
+Even though I think the intensions of Apple / Pixar are great with the open source [USD](https://github.com/PixarAnimationStudios/USD) pipeline I think we as an industry should be relying more on truly open formats that are not controlled by a single entity. Installing `USD` is cumbersome, requires a lot of disk space and is completely overkill for most situations (if your goal is to convert some 3D models to USDZ and show them using `AR Quick Look Gallery`)
 
-In order to move away from using the [USD](https://github.com/PixarAnimationStudios/USD) pipeline solution offered by Pixar I think it would be wise to try and manipulate the intermediary readeable `USDA` format. Unfortunately there are very little examples available of `USDA` files. If we would be able to construct this intermediary format reliably we could focus on creating a tool that takes a `glTF` file and constructs the necessary file structure.
+In order to move away from using the [USD](https://github.com/PixarAnimationStudios/USD) pipeline solution offered by Pixar I think it would be wise to try and manipulate the intermediary readeable `USDA` format. Unfortunately there are very little examples available of `USDA` files.
 
 My idea is to dynamically generate / manipulate the intermediary a general `USDA` file-structure and pass that to the `usdz-converter` to handle the further conversion to `USDZ`.
 
-Please note that this is just an experimental setup and should be seen as an attempt to create a simple pipeline from glTF to USDZ. I have not yet tested the outputted USDZ file as I don't have access to a device with the iOS 12. Currently everything is hardcoded and this is just a proof of concept. The tool does not accept any glTF files yet.
+Please note that this is just an experimental setup and should be seen as an attempt to create a simple pipeline from glTF to USDZ. I have not yet tested the outputted USDZ file as I don't have access to a device with the iOS 12.
 
 Most of the findings come from `trayser` who posted details regarding OBJ to `USDZ` conversion on [developers.apple.com](https://forums.developer.apple.com/thread/104042). `trayser` also noticed that many OBJ files failed to in conversion if they include complex tags. He recommends commenting out any line that starts with anything other than `#`, `v`, `vn`, `vt`, `vp`, `f`, `g` etc.
 
