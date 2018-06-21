@@ -48,27 +48,29 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 ## Installation
 
-Make sure you have [Node.js](http://nodejs.org/) installed.
+- Make sure you have [Node.js](http://nodejs.org/) installed
 
-Download Xcode 10 beta and put it in `/Applications/`
+- Upgrade your operating system to macOS High Sierra 10.13.4 or newer
+
+- Download Xcode 10 beta and put it in `/Applications/`
 
 ```
 https://developer.apple.com/download/
 ```
 
-Link to the beta version instead of the normal version
+- Link to the beta version instead of the normal version
 
 ```
 sudo xcode-select --switch /Applications/Xcode-beta.app
 ```
 
-Construct a new `USDA` using `gltf-to-usdz` and run it through the `usdz_converter`.
+- Construct a new `.usda` using `gltf-to-usdz` and run it through the `usdz_converter`
 
 ```
 node ./bin/gltf-to-usdz.js -i ./assets/DamagedHelmet/DamagedHelmet.gltf -o ./assets/DamagedHelmet.usda && xcrun usdz_converter ./assets/DamagedHelmet.usda ./assets/DamagedHelmet.usdz
 ```
 
-Which should result into the following output
+- On succes the following should be outputted to the console
 
 ```
 2018-06-20 17:21:23.364 usdz_converter[82749:13335731]
@@ -77,7 +79,7 @@ Which should result into the following output
 Converting asset file 'DamagedHelmet.usda' ...
 ```
 
-In order to see the contents of the outputted `USDZ` change the extension to `.zip` and unzip it, preferably in a seperate folder.
+In order to see the contents of the outputted `USDZ` change the extension to `.zip` and unzip it. You will see a `.usdc` and several textures (if the original glTF file had textures).
 
 ## Development
 
@@ -89,6 +91,7 @@ In order to install [USD](https://github.com/PixarAnimationStudios/USD) on MacOS
 
 ```
 https://developer.apple.com/download/
+
 
 sudo xcode-select --switch /Applications/Xcode-beta.app
 ```
