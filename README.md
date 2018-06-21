@@ -30,10 +30,6 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
   OBJ file exported from https://threejs.org/editor/ with glTF as source generated working OBJ's. I've used this as a source of truth to see if the output generated from the tool was the same as the output generated from the editor.
 
-- Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py).
-
-  I have not yet been able to install [USD](https://github.com/PixarAnimationStudios/USD) correctly, please see the development section below.
-
 - ~~Find a way to convert glTF geometry to OBJ geometry and extract the used textures.~~
 
   Done!
@@ -45,6 +41,10 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 - ~~Test if `assets/DamagedHelmet.usdz` works correctly in the AR Quick Look application~~
 
   Done! See image above.
+
+- Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py).
+
+  I have not yet been able to install [USD](https://github.com/PixarAnimationStudios/USD) correctly, please see the development section below.
 
 ## Limitations
 
