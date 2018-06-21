@@ -1,10 +1,10 @@
 # glTF to USDZ
 
-Proof of concept of converting glTF to USDZ for AR Quick Look Gallery.
+Proof of concept of converting glTF to USDZ for AR Quick Look (iOS 12+).
 
 ## Reasoning
 
-Even though I think the intensions of Apple / Pixar are great with the open source [USD](https://github.com/PixarAnimationStudios/USD) pipeline I think we as an industry should be relying more on truly open formats that are not controlled by a single entity. Installing `USD` is cumbersome, requires a lot of disk space and is completely overkill for most situations (if your goal is to convert some 3D models to USDZ and show them using `AR Quick Look Gallery`)
+Even though I think the intensions of Apple / Pixar are great with the open source [USD](https://github.com/PixarAnimationStudios/USD) pipeline I think we as an industry should be relying more on truly open formats that are not controlled by a single entity. Installing `USD` is cumbersome, requires a lot of disk space and is completely overkill for most situations (if your goal is to convert some 3D models to USDZ and show them using `AR Quick Look`)
 
 In order to move away from using the [USD](https://github.com/PixarAnimationStudios/USD) pipeline solution offered by Pixar I think it would be wise to try and manipulate the intermediary readeable `USDA` format. Unfortunately there are very little examples available of `USDA` files.
 
@@ -22,7 +22,7 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 ## To do
 
-- ~~Test if the constructed USDZ output can actually be loaded into AR Quick Look Gallery (requires iOS 12 and a recent iOS device)~~
+- ~~Test if the constructed USDZ output can actually be loaded into AR Quick Look (requires iOS 12 and a recent iOS device)~~
 
   [Confirmed by @domenicopanacea](https://twitter.com/domenicopanacea/status/1008266095386644480)
 

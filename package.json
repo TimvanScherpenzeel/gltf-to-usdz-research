@@ -1,7 +1,7 @@
 {
   "name": "gltf-to-usdz",
   "version": "0.0.1",
-  "description": "Proof of concept of converting glTF to USDZ for AR Quick Look Gallery.",
+  "description": "Proof of concept of converting glTF to USDZ for AR Quick Look (iOS 12+).",
   "main": "index.js",
   "bin": {
     "gltf-to-usdz": "gltf-to-usdz.js"
