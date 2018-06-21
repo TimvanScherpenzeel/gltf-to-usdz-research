@@ -116,6 +116,6 @@ def "Mesh_0" (
 )
 {
 	rel material:binding = </Materials/StingrayPBS_0>
-	float3 xformOp:scale = (1.0, 1.0, 1.0)
+	float3 xformOp:scale = (10.0, 10.0, 10.0)
 	uniform token[] xformOpOrder = ["xformOp:scale"]
 }
