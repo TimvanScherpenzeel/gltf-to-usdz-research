@@ -36,13 +36,15 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 - ~~Find a way to convert glTF geometry to OBJ geometry and extract the used textures.~~
 
-  Basics are done! Vertices and normals unfortunately somehow have some values inverted by default.
+  Done!
 
 - ~~Dynamically construct the USDA file based on passed in textures from the glTF file.~~
 
-  Done
+  Done!
 
-- Test if `assets/DamagedHelmet.usdz` works correctly in the AR Quick Look application
+- ~~Test if `assets/DamagedHelmet.usdz` works correctly in the AR Quick Look application~~
+
+  Done! See image above.
 
 ## Limitations
 
