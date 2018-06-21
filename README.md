@@ -186,3 +186,5 @@ I've reported the issue here [#19](https://github.com/PixarAnimationStudios/USD/
 - https://graphics.pixar.com/usd/docs/Converting-Between-Layer-Formats.html
 
 - https://forums.developer.apple.com/thread/104042
+
+- https://graphics.pixar.com/usd/docs/UsdPreviewSurface-Proposal.html
