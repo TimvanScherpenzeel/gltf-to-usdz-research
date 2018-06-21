@@ -200,3 +200,11 @@ I've reported the issue here [#19](https://github.com/PixarAnimationStudios/USD/
 - https://forums.developer.apple.com/thread/104042
 
 - https://graphics.pixar.com/usd/docs/UsdPreviewSurface-Proposal.html
+
+## Contributing
+
+As it is my goal to create a community project I welcome your to submit any pull requests or open a ticket if you spot an issue. Please be aware that as of now the project is in a very experimental state and only serves as a proof of concept so there is probably lots of things wrong and the code is far from clean.
+
+## Licence
+
+`gltf-to-usdz` is released under the [MIT licence](https://raw.githubusercontent.com/TimvanScherpenzeel/gltf-to-usdz/master/LICENSE).
