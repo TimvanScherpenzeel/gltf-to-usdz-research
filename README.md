@@ -50,6 +50,8 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 - Only the first mesh in the `glTF` file will be parsed and exported. Make sure you merge all meshes.
 
+- Only `glTF` files with external textures are currently handled (as opposed to embedded base64 encoded textures).
+
 ## Installation
 
 - Make sure you have [Node.js](http://nodejs.org/) installed
