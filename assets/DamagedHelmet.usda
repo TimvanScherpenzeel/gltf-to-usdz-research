@@ -49,8 +49,8 @@ def Scope "Materials"
 			float4 inputs:default = (0, 0, 0, 1)
 			asset inputs:file = @DamagedHelmet_baseColorTexture.jpg@
 			float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
-			token inputs:wrapS = "repeat"
-			token inputs:wrapT = "repeat"
+			token inputs:wrapS = "clamp"
+			token inputs:wrapT = "clamp"
 			float3 outputs:rgb
 		}
 
@@ -60,8 +60,8 @@ def Scope "Materials"
 			float4 inputs:default = (0, 0, 0, 1)
 			asset inputs:file = @DamagedHelmet_emissiveTexture.jpg@
 			float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
-			token inputs:wrapS = "repeat"
-			token inputs:wrapT = "repeat"
+			token inputs:wrapS = "clamp"
+			token inputs:wrapT = "clamp"
 			float3 outputs:rgb
 		}
 
@@ -71,8 +71,8 @@ def Scope "Materials"
 			float4 inputs:default = (0, 0, 0, 1)
 			asset inputs:file = @DamagedHelmet_metallicTexture.jpg@
 			float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
-			token inputs:wrapS = "repeat"
-			token inputs:wrapT = "repeat"
+			token inputs:wrapS = "clamp"
+			token inputs:wrapT = "clamp"
 			float3 outputs:rgb
 		}
 
@@ -82,8 +82,8 @@ def Scope "Materials"
 			float4 inputs:default = (0, 0, 0, 1)
 			asset inputs:file = @DamagedHelmet_normalTexture.jpg@
 			float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
-			token inputs:wrapS = "repeat"
-			token inputs:wrapT = "repeat"
+			token inputs:wrapS = "clamp"
+			token inputs:wrapT = "clamp"
 			float3 outputs:rgb
 		}
 
@@ -93,8 +93,8 @@ def Scope "Materials"
 			float4 inputs:default = (0, 0, 0, 1)
 			asset inputs:file = @DamagedHelmet_occlusionTexture.jpg@
 			float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
-			token inputs:wrapS = "repeat"
-			token inputs:wrapT = "repeat"
+			token inputs:wrapS = "clamp"
+			token inputs:wrapT = "clamp"
 			float3 outputs:rgb
 		}
 
@@ -104,8 +104,8 @@ def Scope "Materials"
 			float4 inputs:default = (0, 0, 0, 1)
 			asset inputs:file = @DamagedHelmet_roughnessTexture.jpg@
 			float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
-			token inputs:wrapS = "repeat"
-			token inputs:wrapT = "repeat"
+			token inputs:wrapS = "clamp"
+			token inputs:wrapT = "clamp"
 			float3 outputs:rgb
 		}
 	}
