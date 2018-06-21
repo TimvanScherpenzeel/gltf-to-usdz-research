@@ -85,14 +85,17 @@ In order to see the contents of the outputted `USDZ` change the extension to `.z
 
 In order to install [USD](https://github.com/PixarAnimationStudios/USD) on MacOS please follow the following instructions:
 
-- Make sure to to upgrade your operating system to macOS High Sierra 10.13.4.
+- Upgrade your operating system to macOS High Sierra 10.13.4 or newer
 
-- Make sure to install XCode 10 Beta and select it as target
+- Download Xcode 10 beta and put it in `/Applications/`
 
 ```
 https://developer.apple.com/download/
+```
 
+- Link to the beta version instead of the normal version
 
+```
 sudo xcode-select --switch /Applications/Xcode-beta.app
 ```
 
