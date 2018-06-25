@@ -73,7 +73,7 @@ sudo xcode-select --switch /Applications/Xcode-beta.app
 - Construct a new `.usda` using `gltf-to-usdz` and run it through the `usdz_converter`
 
 ```
-node ./bin/gltf-to-usdz.js -i ./assets/DamagedHelmet/DamagedHelmet.gltf -o ./assets/DamagedHelmet.usda && xcrun usdz_converter ./assets/DamagedHelmet.usda ./assets/DamagedHelmet.usdz
+node ./bin/gltf-to-usdz.js -i ./assets/DamagedHelmet/DamagedHelmet.gltf -o ./assets/DamagedHelmet.usda -s 10.0 && xcrun usdz_converter ./assets/DamagedHelmet.usda ./assets/DamagedHelmet-`date +"%H-%M-%S"`.usdz
 ```
 
 - On succes the following should be outputted to the console
