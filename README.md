@@ -18,7 +18,7 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 [Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz/)
 
-![Screenshot](/assets/example.jpg?raw=true)
+![Screenshot](/assets/helmet.jpg?raw=true)
 
 ## To do
 
