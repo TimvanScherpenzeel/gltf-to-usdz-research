@@ -16,7 +16,7 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 ## Live demo
 
-[Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz/)
+[Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz/), unfortunately due to Github pages not supporting a custom `.htaccess` the direct link to open the `usdz` model from the browser directly with AR Quick Look does not work.
 
 ![Screenshot](/assets/helmet.jpg?raw=true)
 
