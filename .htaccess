@@ -1,0 +1,4 @@
+<IfModule mod_mime.c>
+    AddType model/vnd.pixar.usd .usdz
+    AddType model/usd usdz
+</IfModule>
