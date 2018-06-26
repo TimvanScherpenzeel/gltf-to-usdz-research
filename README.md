@@ -201,6 +201,10 @@ I've reported the issue here [#19](https://github.com/PixarAnimationStudios/USD/
 
 - https://graphics.pixar.com/usd/docs/UsdPreviewSurface-Proposal.html
 
+- https://developer.apple.com/videos/play/wwdc2018/603/
+
+- https://devstreaming-cdn.apple.com/videos/wwdc/2018/603augiuv41xoowslk8/603/603_integrating_apps_and_content_with_ar_quick_look.pdf?dl=1
+
 ## Contributing
 
 As it is my goal to create a community project I welcome you to submit any pull requests or open a ticket if you spot an issue. Please be aware that as of now the project is in a very experimental state and only serves as a proof of concept so there are probably lots of things wrong and the code is far from clean.
