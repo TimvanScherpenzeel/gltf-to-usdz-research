@@ -16,7 +16,7 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 ## Live demo
 
-[Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz/), unfortunately due to Github pages not supporting a custom `.htaccess` the direct link to open the `usdz` model from the browser directly with AR Quick Look does not work.
+[Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz/), unfortunately due to Github pages not supporting a custom `.htaccess` the direct link to open the `usdz` model from the browser directly with AR Quick Look does not work. Once the correct MIME types (see `.htaccess`) have been added to [mime-db](https://help.github.com/articles/mime-types-on-github-pages/) this should work fine.
 
 ![Screenshot](/assets/helmet.jpg?raw=true)
 
