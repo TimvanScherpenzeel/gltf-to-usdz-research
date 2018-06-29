@@ -105,14 +105,12 @@ https://developer.apple.com/download/
 sudo xcode-select --switch /Applications/Xcode-beta.app
 ```
 
-- Install Cmake and QT
+- Install Cmake and QT. If you get any [issues](https://github.com/TimvanScherpenzeel/gltf-to-usdz/issues/1) during compiling or installing you might have to install QT5.
 
 ```
 brew install cmake
 brew install qt@4
 ```
-
-If you get any issues during compiling or installing you might have to install QT5.
 
 - Install PyOpenGL
 
