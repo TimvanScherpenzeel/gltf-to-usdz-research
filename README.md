@@ -109,8 +109,10 @@ sudo xcode-select --switch /Applications/Xcode-beta.app
 
 ```
 brew install cmake
-brew install qt5
+brew install qt@4
 ```
+
+If you get any issues during compiling or installing you might have to install QT5.
 
 - Install PyOpenGL
 
