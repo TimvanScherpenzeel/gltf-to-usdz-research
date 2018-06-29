@@ -109,7 +109,7 @@ sudo xcode-select --switch /Applications/Xcode-beta.app
 
 ```
 brew install cmake
-brew install cartr/qt4/qt
+brew install qt5
 ```
 
 - Install PyOpenGL
