@@ -48,6 +48,8 @@ Most of the findings come from `trayser` who posted details regarding OBJ to `US
 
 ## Limitations
 
+- `.glb` files are not yet accepted. Please use `glTF` files with seperate textures.
+
 - Only the first mesh in the `glTF` file will be parsed and exported. Make sure you merge all meshes.
 
 - Only `glTF` files with external textures are currently handled (as opposed to embedded base64 encoded textures).
