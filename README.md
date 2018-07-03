@@ -28,6 +28,8 @@ Please note that this is just an experimental setup and should be seen as a proo
 
 - Only `glTF` files with external textures are currently handled (as opposed to embedded base64 encoded textures).
 
+- Animations from the glTF are not yet transferred, it seems possible to transfer skeleton animation and regular transformations. Unfortunately due to she shadow being baked on the first frame of the animation you can't really do large moving animations. Besides that the filesize increases quite dramatically. It is not recommended to have animations that move a character away from the origin as it results in tracking problems. Your best bet are micro-animations that enhance a character or model instead of large animations.
+
 ## To do
 
 - ~~Convert the example `USDZ` examples to `USDA` structures by converting `USDC` to `USDA`. Unfortunately I think this requires the installation of the [USD pipeline](https://github.com/PixarAnimationStudios/USD) and the use of [usdcat](https://github.com/PixarAnimationStudios/USD/blob/e6ce9e884a65e7d6acd762e9dbc961dcf9aa36bb/pxr/usd/bin/usdcat/usdcat.py).~~
