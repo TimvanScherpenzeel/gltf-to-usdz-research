@@ -175,7 +175,7 @@ done.
 [1]    53393 abort      usdcat CupAndSaucer.usdc -o CupAndSaucer.usda
 ```
 
-I've reported the issue here [#19](https://github.com/PixarAnimationStudios/USD/issues/19).
+I've reported the issue here [#19](https://github.com/PixarAnimationStudios/USD/issues/19). [@wave-electron](https://github.com/wave-electron) has been able to correctly compile and run USD on a very similar setup. My issues likely arise from having multiple Python versions installed.
 
 ## Resources
 
