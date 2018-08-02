@@ -195,8 +195,8 @@ Success! To use USD, please ensure that you have:
 To take apart a `USDZ` file one should follow the following steps:
 
 1.  Follow the steps mentioned in `Development` to install USD
-2.  Change the extension of the `usdz` file from `.usdz` to `.zip`.
-3.  Unzip the file using `Archive Utility` (comes with MacOS) or likely any other unzipping tool.
+2.  Change the extension of the `usdz` file from `.usdz` to `.zip`
+3.  Unzip the file using `Archive Utility` (comes with MacOS) or likely any other unzipping tool
 
 The folder will contain the included textures seperated out and a `.udsc` file.
 
