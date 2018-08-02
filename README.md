@@ -110,7 +110,7 @@ pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.9/latest/ py
 
 - Update OpenImageIO release version from `Release-1.7.14.zip` to `Release-1.8.12.zip` and add the following section in `build_scripts/build_usd.py` as mentioned as a [solution](https://github.com/PixarAnimationStudios/USD/issues/19#issuecomment-399918369) by `@robpieke` to an earlier Python crash I was experiencing.
 
-```
+```diff
 diff --git a/build_scripts/build_usd.py b/build_scripts/build_usd.py
 index 37fb2a5e..3c940b3b 100644
 --- a/build_scripts/build_usd.py
