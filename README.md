@@ -28,7 +28,7 @@ Please note that this is just an experimental setup and should be seen as a proo
 
 - Only `glTF` files with external textures are currently handled (as opposed to embedded base64 encoded textures).
 
-- Animations from the glTF are not yet transferred, it seems possible to transfer skeleton animation and regular transformations. Unfortunately due to she shadow being baked on the first frame of the animation you can't really do large moving animations. Besides that the filesize increases quite dramatically. It is not recommended to have animations that move a character away from the origin as it results in tracking problems. Your best bet are micro-animations that enhance a character or model instead of large animations.
+- Animations from the glTF are not yet transferred, it seems possible to transfer skeleton animation and regular transformations. Unfortunately due to the shadow being baked on the first frame of the animation you can't really do large moving animations. Besides that the filesize increases quite dramatically. It is not recommended to have animations that move a character away from the origin as it results in tracking problems. Your best bet are micro-animations that enhance a character or model instead of large animations.
 
 ## To do
 
