@@ -108,9 +108,37 @@ pip install PyOpenGL
 pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.9/latest/ pyside2 --trusted-host download.qt.io
 ```
 
-- Update OpenImageIO release version from `Release-1.7.14.zip` to `Release-1.8.12.zip` in `build_scripts/build_usd.py`.
+- Update OpenImageIO release version from `Release-1.7.14.zip` to `Release-1.8.12.zip` and add the following section in `build_scripts/build_usd.py` as mentioned as a [solution](https://github.com/PixarAnimationStudios/USD/issues/19#issuecomment-399918369) by `@robpieke` to an earlier Python crash I was experiencing.
 
-- Run `python USD/build_scripts/build_usd.py BUILD`, it will take roughly 1 hour, resulting in the following output if succesfully installed:
+```
+diff --git a/build_scripts/build_usd.py b/build_scripts/build_usd.py
+index 37fb2a5e..3c940b3b 100644
+--- a/build_scripts/build_usd.py
++++ b/build_scripts/build_usd.py
+@@ -692,7 +692,7 @@ PTEX = Dependency("Ptex", InstallPtex, "include/PtexVersion.h")
+ ############################################################
+ # OpenImageIO
+
+-OIIO_URL = "https://github.com/OpenImageIO/oiio/archive/Release-1.7.14.zip"
++OIIO_URL = "https://github.com/OpenImageIO/oiio/archive/Release-1.8.12.zip"
+
+ def InstallOpenImageIO(context, force):
+     with CurrentWorkingDirectory(DownloadURL(OIIO_URL, context, force)):
+@@ -855,6 +855,12 @@ def InstallUSD(context):
+
+         if context.buildPython:
+             extraArgs.append('-DPXR_ENABLE_PYTHON_SUPPORT=ON')
++            if MacOS():
++                import distutils.sysconfig
++                pyLibPath = distutils.sysconfig.get_config_var('LIBDIR')
++                pyIncPath = distutils.sysconfig.get_config_var('INCLUDEPY')
++                extraArgs.append('-DPYTHON_LIBRARY=' + pyLibPath + '/libpython2.7.dylib')
++                extraArgs.append('-DPYTHON_INCLUDE_DIR=' + pyIncPath)
+         else:
+             extraArgs.append('-DPXR_ENABLE_PYTHON_SUPPORT=OFF')
+```
+
+- Run `python USD/build_scripts/build_usd.py BUILD`, it will take roughly 1 hour the first time you build because of all the dependencies that need to be compiled, resulting in the following output if succesfully installed:
 
 ```
 ➜  pixar python USD/build_scripts/build_usd.py BUILD
@@ -159,23 +187,6 @@ Success! To use USD, please ensure that you have:
     The following in your PATH environment variable:
     /Users/timvanscherpenzeel/Projects/pixar/BUILD/bin
 ```
-
-Unfortunately I have the following error when running `usdcat`:
-
-```
-➜  cupandsaucer usdcat CupAndSaucer.usdc -o CupAndSaucer.usda
-
------------------------- 'Python' is dying ------------------------
-Python crashed. FATAL ERROR: Failed axiom: ' Py_IsInitialized() '
-in operator() at line 148 of /Users/timvanscherpenzeel/Projects/pixar/USD/pxr/base/lib/tf/pyTracing.cpp
-
-The stack can be found in Tims-MacBook-Pro.local:/var/folders/s9/rnmbn61120s2hwww26_gk3k40000gn/T//st_Python.53393
-done.
-------------------------------------------------------------------
-[1]    53393 abort      usdcat CupAndSaucer.usdc -o CupAndSaucer.usda
-```
-
-I've reported the issue here [#19](https://github.com/PixarAnimationStudios/USD/issues/19). [@wave-electron](https://github.com/wave-electron) has been able to correctly compile and run USD on a very similar setup. My issues likely arise from having multiple Python versions installed.
 
 ## Resources
 
