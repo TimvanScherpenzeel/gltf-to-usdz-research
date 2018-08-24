@@ -19,14 +19,17 @@
     "url": "https://github.com/TimvanScherpenzeel/gltf-to-usdz/issues"
   },
   "homepage": "https://github.com/TimvanScherpenzeel/gltf-to-usdz#readme",
-  "devDependencies": {
-    "eslint": "^5.1.0",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0"
+  "scripts": {
+    "lint": "eslint ."
   },
   "dependencies": {
     "argparse": "^1.0.10",
     "gltf-validator": "^2.0.0-dev.2.4",
     "sharp": "^0.20.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.13.0"
   }
 }

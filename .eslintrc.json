@@ -2,7 +2,10 @@
   "extends": "airbnb-base",
   "rules": {
     "no-tabs": 0,
-    "indent": 0,
+    "indent": ["error", "tab"],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "function-paren-newline": ["error", "never"],
     "no-console": 0,
     "no-bitwise": 0,
     "code": 200
