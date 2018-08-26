@@ -1,13 +1,16 @@
 {
   "extends": "airbnb-base",
   "rules": {
-    "no-tabs": 0,
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "function-paren-newline": ["error", "never"],
-    "no-console": 0,
+    "import/prefer-default-export": 0,
     "no-bitwise": 0,
-    "code": 200
+    "no-underscore-dangle": 0,
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ]
   }
 }
