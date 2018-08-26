@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/TimvanScherpenzeel/gltf-to-usdz#readme",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint './**/*.js' --ignore-pattern '!.eslintrc.js' .eslintrc.js"
   },
   "dependencies": {
     "argparse": "^1.0.10",
