@@ -69,7 +69,7 @@ def Scope "Materials"
       {
         uniform token info:id = "UsdUVTexture"
         float4 inputs:default = (0, 0, 0, 1)
-        asset inputs:file = @/Users/TVS/Projects/gltf-to-usdz/assets/DamagedHelmet_metallicTexture.jpg@
+        asset inputs:file = @DamagedHelmet_metallicTexture.jpg@
         float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
         token inputs:wrapS = "repeat"
         token inputs:wrapT = "repeat"
@@ -102,7 +102,7 @@ def Scope "Materials"
       {
         uniform token info:id = "UsdUVTexture"
         float4 inputs:default = (0, 0, 0, 1)
-        asset inputs:file = @/Users/TVS/Projects/gltf-to-usdz/assets/DamagedHelmet_roughnessTexture.jpg@
+        asset inputs:file = @DamagedHelmet_roughnessTexture.jpg@
         float2 inputs:st.connect = </Materials/StingrayPBS_0/Primvar.outputs:result>
         token inputs:wrapS = "repeat"
         token inputs:wrapT = "repeat"
