@@ -24,13 +24,13 @@
   },
   "dependencies": {
     "argparse": "^1.0.10",
-    "gltf-validator": "^2.0.0-dev.2.4",
-    "sharp": "^0.20.5"
+    "gltf-validator": "^2.0.0-dev.2.5",
+    "sharp": "^0.20.8"
   },
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "prettier": "^1.14.2",
     "prettier-eslint": "^8.8.2"
   }
