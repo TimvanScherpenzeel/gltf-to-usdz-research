@@ -1,5 +1,5 @@
 {
-  "name": "gltf-to-usdz",
+  "name": "gltf-to-usdz-research",
   "version": "0.0.1",
   "description": "Proof of concept of converting glTF to USDZ for AR Quick Look (iOS 12+).",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TimvanScherpenzeel/gltf-to-usdz.git"
+    "url": "git+https://github.com/TimvanScherpenzeel/gltf-to-usdz-research.git"
   },
   "author": "Tim van Scherpenzeel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TimvanScherpenzeel/gltf-to-usdz/issues"
+    "url": "https://github.com/TimvanScherpenzeel/gltf-to-usdz-research/issues"
   },
-  "homepage": "https://github.com/TimvanScherpenzeel/gltf-to-usdz#readme",
+  "homepage": "https://github.com/TimvanScherpenzeel/gltf-to-usdz-research#readme",
   "scripts": {
     "lint": "eslint './**/*.js' --ignore-pattern '!.eslintrc.js' .eslintrc.js"
   },
