@@ -1,6 +1,6 @@
 # glTF to USDZ research
 
-Proof of concept of converting glTF to USDZ for AR Quick Look (iOS 12+).
+Research and proof of concept of converting glTF to USDZ for AR Quick Look (iOS 12+).
 
 ## Reasoning
 
