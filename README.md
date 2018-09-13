@@ -1,4 +1,4 @@
-# glTF to USDZ
+# glTF to USDZ research
 
 Proof of concept of converting glTF to USDZ for AR Quick Look (iOS 12+).
 
@@ -18,7 +18,7 @@ My goal of this research is to inspire others to make proper converters that han
 
 ## Live demo
 
-[Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz/)
+[Live demo](https://timvanscherpenzeel.github.io/gltf-to-usdz-research/)
 
 ![Screenshot](/assets/helmet_including_preview.jpg?raw=true)
 
@@ -91,7 +91,7 @@ https://developer.apple.com/download/
 sudo xcode-select --switch /Applications/Xcode-beta.app
 ```
 
-- Install Cmake and QT. If you get any [issues](https://github.com/TimvanScherpenzeel/gltf-to-usdz/issues/1) during compiling or installing you might have to install QT5.
+- Install Cmake and QT. If you get any [issues](https://github.com/TimvanScherpenzeel/gltf-to-usdz-research/issues/1) during compiling or installing you might have to install QT5.
 
 ```
 brew install cmake
@@ -222,4 +222,4 @@ As it is my goal to create a community project I welcome you to submit any pull 
 
 ## Licence
 
-`gltf-to-usdz` is released under the [MIT licence](https://raw.githubusercontent.com/TimvanScherpenzeel/gltf-to-usdz/master/LICENSE).
+`gltf-to-usdz` is released under the [MIT licence](https://raw.githubusercontent.com/TimvanScherpenzeel/gltf-to-usdz-research/master/LICENSE).
